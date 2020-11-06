@@ -7,5 +7,3 @@
 - `npm run build:shared`
 
 - `npm run serve:plugins`
-
-ng g application plugins
