@@ -1,0 +1,62 @@
+{
+  "name": "angular-plugin-architecture-module-federation",
+  "version": "0.0.0",
+  "scripts": {
+    "start": "concurrently \"npm run serve:plugins\" \"npm run serve:app\"",
+    "build": "npm run build:shared && npm run build:plugins && npm run build:app",
+    "serve:app": "ng serve -o",
+    "serve:plugins": "ng serve plugins -o",
+    "build:app": "ng build --prod",
+    "build:shared": "ng build shared --prod",
+    "build:plugins": "ng build plugins --prod"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "~11.0.0-rc.0",
+    "@angular/common": "~11.0.0-rc.0",
+    "@angular/compiler": "~11.0.0-rc.0",
+    "@angular/core": "~11.0.0-rc.0",
+    "@angular/forms": "~11.0.0-rc.0",
+    "@angular/platform-browser": "~11.0.0-rc.0",
+    "@angular/platform-browser-dynamic": "~11.0.0-rc.0",
+    "@angular/router": "~11.0.0-rc.0",
+    "ngx-build-plus": "10.1.1",
+    "rxjs": "~6.6.0",
+    "tslib": "^2.0.0",
+    "zone.js": "~0.10.2"
+  },
+  "resolutions": {
+    "webpack": "^5.0.0"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "~0.1100.0-rc.0",
+    "@angular/cli": "~11.0.0-rc.0",
+    "@angular/compiler-cli": "~11.0.0-rc.0",
+    "@types/jasmine": "~3.5.0",
+    "@types/node": "^12.11.1",
+    "codelyzer": "^6.0.0",
+    "concurrently": "5.3.0",
+    "jasmine-core": "~3.6.0",
+    "jasmine-spec-reporter": "~5.0.0",
+    "karma": "~5.2.0",
+    "karma-chrome-launcher": "~3.1.0",
+    "karma-coverage": "~2.0.3",
+    "karma-jasmine": "~4.0.0",
+    "karma-jasmine-html-reporter": "^1.5.0",
+    "ng-packagr": "^11.0.0-next.0",
+    "prettier": "2.1.2",
+    "protractor": "~7.0.0",
+    "ts-node": "~8.3.0",
+    "tslint": "~6.1.0",
+    "tslint-config-prettier": "1.18.0",
+    "typescript": "~4.0.2"
+  },
+  "prettier": {
+    "useTabs": false,
+    "printWidth": 80,
+    "tabWidth": 2,
+    "singleQuote": true,
+    "trailingComma": "none",
+    "semi": true
+  }
+}

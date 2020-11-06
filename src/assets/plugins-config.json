@@ -1,0 +1,14 @@
+{
+  "plugin1": {
+    "mfEntry": "http://localhost:4201/remoteEntry.js",
+    "name": "plugins",
+    "exposedModule": "./Plugin1",
+    "ngModuleName": "Plugin1Component"
+  },
+  "plugin2": {
+    "mfEntry": "http://localhost:4201/remoteEntry.js",
+    "name": "plugins",
+    "exposedModule": "./Plugin2",
+    "ngModuleName": "Plugin2Component"
+  }
+}
